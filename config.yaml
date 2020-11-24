@@ -1,0 +1,62 @@
+# This file contains the Project Configuration Parameters
+
+# Random State
+random_state: 100
+
+# Verbose for Log Prints
+verbose: True
+
+# Dataset Path
+dataset:
+  #path of the dataset is as follows : 
+  path: 'C:\Users\dell\Desktop\projects\Machine Learning\Numyard\mushrooms.csv'
+
+  # Test Data Size for train_test_split
+  test_size: 0.30
+
+# Model Parameters
+model:
+
+  # Decision Tree
+  decision_tree:
+    criterion: 'entropy'
+
+  # Random Forest Classifier
+  random_forest:
+    n_estimators: 12
+
+  # Gradient Boosting Classifier
+  gradient_boost:
+    n_estimators: 150
+    criterion: 'friedman_mse'
+
+  #SVM Classifier
+  svm:
+    C: 1
+    kernel: 'sigmoid'
+    gamma: 0.8
+
+  #Logistic Regression Classifier
+  logistic_regression:
+    penalty: 'l2'
+    solver: 'lbfgs'
+  
+  #KNN Classifier
+  knn:
+    n_neighbors: 7
+
+  #Extra Trees Classifier
+  extra_tree:
+    n_estimators: 100
+    criterion: 'gini'
+    max_depth: 10
+
+  #MLP Classifier
+  mlp:
+    hidden_layer_sizes: 100
+    activation: 'relu'
+
+  
+
+# Model Save Path
+model_save_path: 'C:\Users\dell\Desktop\projects\Machine Learning\Numyard\saved_models'
